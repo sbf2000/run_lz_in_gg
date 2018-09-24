@@ -11,7 +11,7 @@ stillRunning=$(ps -ef |grep "$PWD/autogtp" |grep -v "grep")
 if [ "$stillRunning" ] ; then 
 echo "TWS service was already started by another way" 
 echo "Kill it and then startup by this shell, other wise this shell will loop out this message annoyingly" 
-kill -9 $pidof $PWD/autogtp 
+pkill -9 $pidof $PWD/autogtp 
 else 
 echo "TWS service was not started" 
 echo "Starting service ..." 
