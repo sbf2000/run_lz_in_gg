@@ -15,7 +15,7 @@ pkill -9 $pidof $PWD/autogtp
 else 
 echo "TWS service was not started" 
 echo "Starting service ..." 
-$PWD/autogtp -g 8 
+$PWD/autogtp -g 2 
 echo "TWS service was exited!" 
 fi 
 sleep 10 
